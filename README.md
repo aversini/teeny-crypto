@@ -17,6 +17,8 @@
 
 **Get help**
 
+<img src="https://raw.githubusercontent.com/aversini/teeny-crypto/master/configuration/screenshots/help.png" alt="help example">
+
 ## License
 
 MIT © Arno Versini
