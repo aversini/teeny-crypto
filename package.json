@@ -1,6 +1,6 @@
 {
   "name": "teeny-crypto",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Arno Versini",
   "description": "Encode or decode a file with a password",
