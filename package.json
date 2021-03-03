@@ -1,0 +1,64 @@
+{
+  "name": "teeny-crypto",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Arno Versini",
+  "description": "Encode or decode a file with a password",
+  "homepage": "https://github.com/aversini/teeny-crypto",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aversini/teeny-crypto.git"
+  },
+  "bin": {
+    "teeny-crypto": "bin/cli.js"
+  },
+  "files": [
+    "bin/cli.js",
+    "src/*.js"
+  ],
+  "scripts": {
+    "bump": "bump-and-release -t bump",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -p angular",
+    "latest": "rimraf LATEST.md && conventional-changelog -o LATEST.md -n \"./configuration/latest/config.js\"",
+    "lint": "eslint --color \"./src/*.js\" \"./bin/*.js\" \"./configuration/**/*.js\"",
+    "lint:fix": "eslint --fix --color \"./src/*.js\" \"./bin/*.js\" \"./configuration/**/*.js\"",
+    "prettier:fix": "prettier --loglevel error --write \"{src/**/*.js,bin/**/*.js,configuration/**/*.js}\"",
+    "prettier:all": "npm-run-all --serial prettier:fix lint:fix",
+    "release": "bump-and-release -t release",
+    "test": "cross-env NODE_ENV=\"test\" TZ=UTC jest",
+    "test:coverage": "npm run test -- --coverage",
+    "test:watch": "npm run test -- --watch"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/cli": "^12.0.1",
+    "@testing-library/jest-dom": "^5.11.9",
+    "babel-eslint": "^10.1.0",
+    "bump-and-release": "^2.0.0",
+    "compare-func": "^2.0.0",
+    "conventional-changelog-cli": "^2.1.1",
+    "cross-env": "^7.0.3",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.1",
+    "eslint": "^7.21.0",
+    "fsify": "4.0.2",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "q": "^1.5.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "boxen": "5.0.0",
+    "fs-extra": "9.1.0",
+    "kleur": "4.1.4",
+    "lodash": "4.17.21",
+    "meow": "9.0.0",
+    "ora": "5.3.0",
+    "pretty-error": "3.0.3",
+    "teeny-js-utilities": "^3.0.0",
+    "teeny-logger": "^1.0.0"
+  }
+}
