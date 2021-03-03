@@ -19,6 +19,14 @@
 
 <img src="https://raw.githubusercontent.com/aversini/teeny-crypto/master/configuration/screenshots/help.png" alt="help example">
 
+**Encrypt a file**
+
+<img src="https://raw.githubusercontent.com/aversini/teeny-crypto/master/configuration/screenshots/encrypt.png" alt="encrypt example">
+
+**Decrypt a file**
+
+<img src="https://raw.githubusercontent.com/aversini/teeny-crypto/master/configuration/screenshots/decrypt.png" alt="decrypt example">
+
 ## License
 
 MIT © Arno Versini
