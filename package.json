@@ -40,7 +40,7 @@
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
-    "eslint": "^7.21.0",
+    "eslint": "^8.26.0",
     "fsify": "4.0.2",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
