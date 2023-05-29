@@ -7,6 +7,8 @@
 
 > Teeny Crypto is a command line tool that can encode or decode a file with a password
 
+**DEPRECATION NOTICE:** For newer Node versions support, please use https://github.com/aversini/node-cli/tree/main/packages/secret
+
 ## Installation
 
 ```sh
